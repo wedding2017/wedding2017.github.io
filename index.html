@@ -1,123 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="ScoopThemes">
-    <meta name="ROBOTS" content="Bootstrap 3 Themes, Responsive Themes, Bootstrap 3 Responsive, Wordpress Themes, Clean Themes, Modern Themes, Flat Themes, Flat UI, UI Design, UX Design, Web design, responsive bootstrap, Jquery Plugins, Free Plugins, Premium Bootstrap themes, Bootstrap 3, Premium Web Templates, Bootstrap Templates, Bootstrap Responsive Templates, Admin, Dashboard, Admin Templates, Admin Responsive, Admin responsive themes">
-    <meta name="description" content="Solutions For Web Developers Form ( Web Templates, Web Themes, Jquery Plugins, UX Design.. ) Whatever They Need.">
-    <meta name="abstract" content="Solutions For Web Developers Form ( Web Templates, Web Themes, Jquery Plugins, UX Design.. ) Whatever They Need.">
-   
-    <meta name="author" content="www.scoopthemes.com">
-    <meta name="publisher" content="www.scoopthemes.com">
-    <meta name="copyright" content="www.scoopthemes.com">
-    <meta name="revisit-after" content="2 days">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>Coming Soon</title>
+    <title>蔡冰清和齐博钊的婚礼</title>
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/animations.css">
+    <!-- Bootstrap core CSS -->
+    <link href="js/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- siimple style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-</head>
+    <!-- PhotoSwipe Core CSS file -->
+    <link rel="stylesheet" href="src/PhotoSwipe/photoswipe.css">
 
-<body>
+    <!-- PhotoSwipe Skin CSS file (styling of UI - buttons, caption, etc.)-->
+    <link rel="stylesheet" href="src/PhotoSwipe/default-skin/default-skin.css">
+    <link rel="stylesheet" type="text/css" href="css/rocket.css" media="screen">
 
-    <div class="cloud floating">
-        <img src="assets/img/cloud.png" alt="Scoop Themes">
-    </div>
+    <!-- text animation-->
+    <link rel="stylesheet" href="css/textanimation.css">
 
-    <div class="cloud pos1 fliped floating">
-        <img src="assets/img/cloud.png" alt="Scoop Themes">
-    </div>
-
-    <div class="cloud pos2 floating">
-        <img src="assets/img/cloud.png" alt="Scoop Themes">
-    </div>
-
-    <div class="cloud pos3 fliped floating">
-        <img src="assets/img/cloud.png" alt="Scoop Themes">
-    </div>
+    <!-- jQuery -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
 
-    <div id="wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <br/>
-                    <br/>
-                    <h1 class="subtitle">We're working hard to launch our website and we'll be ready very soon</h1>
-                    <br/>
-             
-                   
-                    <br/>
-                </div>
-                <div class="col-sm-12 align-center">
-                    <h1 class="subtitle">敬请期待</h1>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- PhotoSwipe Core JS file -->
+    <script src="src/PhotoSwipe/photoswipe.min.js"></script>
 
+    <!-- PhotoSwipe UI JS file -->
+    <script src="src/PhotoSwipe/photoswipe-ui-default.min.js"></script>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.form-n-validate.js"></script>
-    <script>
-        
-$(document).ready( function () {
-    $('#wrapper').height($(document).height());
-    // I only have one form on the page but you can be more specific if need be.
-    var $form = $('form');
-
-    if ( $form.length > 0 ) {
-        $('form input[type="submit"]').bind('click', function ( event ) {
-            if ( event ) event.preventDefault();
-            // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
-            if ( $form.validate() ) { register($form); }
-        });
-    }
-});
-
-/*function appendResult(userText , className, iconClass){
-  var resultHTML = "<div class='stretchLeft result "+ className + "'>" + userText + " <span class='fa fa-" + iconClass + "'></span>" + "</div>";
-  $('body').append(resultHTML);
-  $('.result').delay(10000).fadeOut('1000');
-}
-
-
-function register($form) {
-    $.ajax({
-        type: $form.attr('method'),
-        url: $form.attr('action'),
-        data: $form.serialize(),
-        cache       : false,
-        dataType    : 'json',
-        contentType: "application/json; charset=utf-8",
-        error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
-        success     : function(data) {
-            if (data.result != "success") {
-                appendResult('Wrong Email Or You Are Already Registered, Try Again', 'error', 'exclamation');
-            } else {
-                // It worked, carry on...
-                appendResult('Successful, Check Your Email For Confirmation ', 'success', 'check');
-            }
+    <!-- jqPhotoSwipe JS file -->
+    <script src="src/jqPhotoSwipe.js"></script>
+    <script type="text/javascript" src="images/test.json"></script>
+      
+    <!-- Bootstrap core JavaScript -->
+    <!--<script src="vendor/jquery/jquery.min.js"></script> -->
+    <script src="js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+       <style>
+	    @font-face {
+	        font-family: "My Custom Font";
+	        src: url('css/8font.ttf') format("truetype");
+	    }
+	    .navbar-custom {
+		  background-color: #F2ECDE;
+                  /*background-image: linear-gradient(120deg, #fc0004, #f96d70);*/
+	    }
+	    .titlediv{
+			font-size: 30px;
+			font-weight: 600;
+			color: #ffffff;
+			/*background-color: #A0B362;*/
+			background: linear-gradient(to bottom, #c8d0a6 0%,#567544 100%);
+			/*background-image: linear-gradient(120deg, #fc0004, #f96d70);*/
+			text-align: center;
+			margin-top: 60px;
+			font-family:"My Custom Font";   
+			font:"My Custom Font";  
+			padding: 10px;
         }
-    });
-}*/
-    </script>
+	    .sectiondiv{
+			font-size: 30px;
+			font-weight: 600;
+			color: #a59083;
+			text-align: center;
+			margin-top: 60px;
+			margin-bottom: 10px;
+        }
+		@media (min-width: 768px) {
+			.navbar-brand
+			{
+				text-align: center;
 
-</body>
+			}
+		}
+
+	.pswp__caption .pswp__caption__center {
+	    font-size: 36px;
+	}
+	.pswp__caption .pswp__caption__center small{
+	    font-size: 34px;
+	}
+	
+	p.customfont { 
+	    font-family: "My Custom Font", Verdana, Tahoma;
+	}
+
+       </style>
+  </head>
+
+  <body style="background-color: #F7E4D6;">
+    <!-- Page Content -->
+    <div class="container" >
+	
+      <div class = "h-100 justify-content-center align-items-center row">
+        <img src="images/V4.png" width="288" height="224" alt="">
+      </div>
+      <div class = "titlediv h-100 justify-content-center align-items-center row">
+	    照片集
+      </div>
+      
+      <div class = "sectiondiv h-100 justify-content-center align-items-center row">
+	    <p class="customfont">婚纱照</p>
+      </div>
+      <div class="wedding row"></div>
+      <div class = "h-100 justify-content-center align-items-center row blink" style = "font-family:'My Custom Font'; font:'My Custom Font'; color: #ffffff; font-size: 20px;">
+	    <b>点击图片浏览更多</b>
+      </div>
+<!--    <div  class="container-exibition-text is-animate text-center style3">
+        <div style="animation-delay: 0s;">点</div>
+        <div style="animation-delay: 0.1s;">击</div>
+        <div style="animation-delay: 0.2s;">图</div>
+        <div style="animation-delay: 0.3s;">片</div>
+        <div style="animation-delay: 0.4s;">浏</div>
+        <div style="animation-delay: 0.5s;">览</div>
+        <div style="animation-delay: 0.6s;">更</div>
+	<div style="animation-delay: 0.7s;">多</div>
+    </div>-->
+      <div class = "sectiondiv h-100 justify-content-center align-items-center row">
+	    <p class="customfont">生活照</p>
+      </div>
+      <div class="life h-100 justify-content-center align-items-center row "></div>
+      <div class = "h-100 justify-content-center align-items-center row blink" style = "font-family:'My Custom Font'; font:'My Custom Font';color: #ffffff; font-size: 20px;">
+	    <b>点击图片浏览更多</b>
+      </div>
+      <div class = "sectiondiv h-100 justify-content-center align-items-center row">
+	    <p class="customfont">童年成长照</p>
+      </div>
+      <div class="family row"></div>
+      <div class = "h-100 justify-content-center align-items-center row blink" style = "font-family:'My Custom Font'; font:'My Custom Font';color: #ffffff; font-size: 20px;">
+	    <b>点击图片浏览更多</b>
+      </div>
+      <br>
+
+    </div>
+    <!-- /.container -->
+    <a href="javascript:void(0);" id="rocketmeluncur" class="showrocket" ><i></i></a>
+    <!-- Footer -->
+    <footer class="py-5 ">
+      <div class="container">
+        <p class="m-0 text-center text-black">Copyright &copy; Bozhao Qi & Bingqing Cai</p>
+        <p class="m-0 text-center text-black">Acknowledgment: Yuzhou Zhao</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+    <script type="text/javascript">
+			$(document).ready(function() {
+/*				$(".fancybox").jqPhotoSwipe({
+					galleryOpen: function (gallery) {
+						//with `gallery` object you can access all methods and properties described here http://photoswipe.com/documentation/api.html
+						//console.log(gallery);
+						//console.log(gallery.currItem);
+						//console.log(gallery.getCurrentIndex());
+						//gallery.toggleDesktopZoom();
+					}
+				});*/
+				$(".forcedgallery a").jqPhotoSwipe({
+					forceSingleGallery: true
+				});
+				$(".family a").jqPhotoSwipe({
+					shareEl: false,
+					forceSingleGallery: true
+				});
+				$(".life a").jqPhotoSwipe({
+					shareEl: false,
+					forceSingleGallery: true
+				});
+				$(".wedding a").jqPhotoSwipe({
+					shareEl: false,
+					forceSingleGallery: true
+				});
+
+			});
+		</script>
+
+		<script type="text/javascript">
+			jQuery(window).scroll(function(){
+			    if(jQuery(window).scrollTop()<50){
+			        jQuery('#rocketmeluncur').slideUp(500);
+			    }else{
+			        jQuery('#rocketmeluncur').slideDown(500);
+			    }
+			    var ftrocketmeluncur = jQuery("#ft")[0] ? jQuery("#ft")[0] : jQuery(document.body)[0];
+			    var scrolltoprocketmeluncur = $('rocketmeluncur');
+			var viewPortHeightrocketmeluncur = parseInt(document.documentElement.clientHeight);
+			var scrollHeightrocketmeluncur = parseInt(document.body.getBoundingClientRect().top);
+			var basewrocketmeluncur = parseInt(ftrocketmeluncur.clientWidth);
+			var swrocketmeluncur = scrolltoprocketmeluncur.clientWidth;
+			if (basewrocketmeluncur < 1000) {
+			var leftrocketmeluncur = parseInt(ftrocketmeluncur.offsetLeft);
+			leftrocketmeluncur = leftrocketmeluncur < swrocketmeluncur ? leftrocketmeluncur * 2 - swrocketmeluncur : leftrocketmeluncur;
+			//scrolltoprocketmeluncur.style.left = ( basewrocketmeluncur + leftrocketmeluncur ) + 'px';
+			  scrolltoprocketmeluncur.css('left', (basewrocketmeluncur + leftrocketmeluncur + "px"));
+
+			} else {
+			//scrolltoprocketmeluncur.style.left = 'auto';
+			//scrolltoprocketmeluncur.style.right = '10px';
+            scrolltoprocketmeluncur.css('left', 'auto');
+            scrolltoprocketmeluncur.css('right', '10px');
+			}
+			})
+			
+			jQuery('#rocketmeluncur').click(function(){
+			    jQuery("html, body").animate({ scrollTop: '0px',display:'none'},{
+			            duration: 600,  
+			            easing: 'linear'
+			        });
+			    
+			    var self = this;
+			    this.className += ' '+"launchrocket";
+			    setTimeout(function(){
+			      self.className = 'showrocket';
+			    },800)
+			});
+		</script>
+		
+		<script>
+		    var picpercol = 2;
+		    var familyHtml = "";
+		    for(var i=0; i<data['family'].length; i++){
+			var image = data['family'][i]['image'];
+			var caption = data['family'][i]['caption'];
+			if(i<=picpercol){
+//"' title='" + caption + 
+				familyHtml= familyHtml + "<div class='col-lg-4 col-md-4 col-sm-6'><a href='images/family/" +image+ "' title='" + caption + "' class='d-block mb-4 h-100'><img class='img-fluid img-thumbnail' src='images/family/"+image + "'></a></div>";
+			}else{
+				familyHtml= familyHtml + "<div class='col-lg-4 col-md-4 col-sm-6' style='display: none;'><a href='images/family/" +image+ "' title='" + caption + "' class='d-block mb-4 h-100'></a></div>";
+			}
+			//<a href="images/zhaopian/8.jpg" title="Photo Caption #1" alt="Photo Caption #1"><img src="images/zhaopian/8.jpg" border="0" class="thumb"></a> <img class='img-fluid img-thumbnail' src='images/family/"+image + "'>  
+		    }
+       		    familyHtml= familyHtml + "</div>";
+		    $('.family').html(familyHtml);
+
+		    var lifeHtml = "";
+		    for(var i=0; i<data['life'].length; i++){
+			var image = data['life'][i]['image'];
+			var caption = data['life'][i]['caption'];
+			if(i<=picpercol){
+				lifeHtml= lifeHtml + "<div class='col-lg-4 col-md-4 col-sm-6'><a href='images/life/" +image+ "' title='" + caption + "' class='d-block mb-4 h-100'><img class='img-fluid img-thumbnail' src='images/life/"+image + "'></a></div>";
+			}else{
+				lifeHtml= lifeHtml + "<div class='col-lg-4 col-md-4 col-sm-6' style='display: none;'><a href='images/life/" +image+ "' title='" + caption + "' class='d-block mb-4 h-100'></div>";
+			}
+			//<a href="images/zhaopian/8.jpg" title="Photo Caption #1" alt="Photo Caption #1"><img src="images/zhaopian/8.jpg" border="0" class="thumb"></a>  <img class='img-fluid img-thumbnail' src='images/life/"+image + "'></a>   
+		    }
+		    $('.life').html(lifeHtml);
+
+		    var wedHtml = "";
+		    for(var i=0; i<data['wedding'].length; i++){
+			var image = data['wedding'][i]['image'];
+			var caption = data['wedding'][i]['caption'];
+			if(i<=picpercol){
+				wedHtml= wedHtml + "<div class='col-lg-4 col-md-4 col-sm-6'><a href='images/wedding/" +image+ "' title='" + caption + "' class='d-block mb-4 h-100'><img class='img-fluid img-thumbnail' src='images/wedding/"+image + "'></a></div>";
+			}else{
+				wedHtml= wedHtml + "<div class='col-lg-4 col-md-4 col-sm-6' style='display: none;'><a href='images/wedding/" +image+ "' title='" + caption + "' class='d-block mb-4 h-100'></a></div>";
+			}
+			//<a href="images/zhaopian/8.jpg" title="Photo Caption #1" alt="Photo Caption #1"><img src="images/zhaopian/8.jpg" border="0" class="thumb"></a> <img class='img-fluid img-thumbnail' src='images/wedding/"+image + "'> 
+		    }
+		    $('.wedding').html(wedHtml);
+
+		</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93224782-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-93224782-2');
+</script>
+
+  </body>
 
 </html>
