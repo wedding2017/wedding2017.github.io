@@ -8,7 +8,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>蔡冰清和齐博钊的婚礼</title>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>婚礼照片集</title>
 
     <!-- Bootstrap core CSS -->
     <link href="js/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +59,7 @@
     <!-- jqPhotoSwipe JS file -->
     <script src="src/jqPhotoSwipe.js"></script>
     <script type="text/javascript" src="images/test.json"></script>
-      
+
     <!-- Bootstrap core JavaScript -->
     <!--<script src="vendor/jquery/jquery.min.js"></script> -->
     <script src="js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -62,8 +81,8 @@
 			/*background-image: linear-gradient(120deg, #fc0004, #f96d70);*/
 			text-align: center;
 			margin-top: 60px;
-			font-family:"My Custom Font";   
-			font:"My Custom Font";  
+			font-family:"My Custom Font";
+			font:"My Custom Font";
 			padding: 10px;
         }
 	    .sectiondiv{
@@ -88,8 +107,8 @@
 	.pswp__caption .pswp__caption__center small{
 	    font-size: 34px;
 	}
-	
-	p.customfont { 
+
+	p.customfont {
 	    font-family: "My Custom Font", Verdana, Tahoma;
 	}
 
@@ -99,14 +118,14 @@
   <body style="background-color: #F7E4D6;">
     <!-- Page Content -->
     <div class="container" >
-	
+
       <div class = "h-100 justify-content-center align-items-center row">
         <img src="images/V4.png" width="288" height="224" alt="">
       </div>
       <div class = "titlediv h-100 justify-content-center align-items-center row">
 	    照片集
       </div>
-      
+
       <div class = "sectiondiv h-100 justify-content-center align-items-center row">
 	    <p class="customfont">婚纱照</p>
       </div>
@@ -209,13 +228,13 @@
             scrolltoprocketmeluncur.css('right', '10px');
 			}
 			})
-			
+
 			jQuery('#rocketmeluncur').click(function(){
 			    jQuery("html, body").animate({ scrollTop: '0px',display:'none'},{
-			            duration: 600,  
+			            duration: 600,
 			            easing: 'linear'
 			        });
-			    
+
 			    var self = this;
 			    this.className += ' '+"launchrocket";
 			    setTimeout(function(){
@@ -223,7 +242,7 @@
 			    },800)
 			});
 		</script>
-		
+
 		<script>
 		    var picpercol = 2;
 		    var familyHtml = "";
@@ -231,12 +250,12 @@
 			var image = data['family'][i]['image'];
 			var caption = data['family'][i]['caption'];
 			if(i<=picpercol){
-//"' title='" + caption + 
+//"' title='" + caption +
 				familyHtml= familyHtml + "<div class='col-lg-4 col-md-4 col-sm-6'><a href='images/family/" +image+ "' title='" + caption + "' class='d-block mb-4 h-100'><img class='img-fluid img-thumbnail' src='images/family/"+image + "'></a></div>";
 			}else{
 				familyHtml= familyHtml + "<div class='col-lg-4 col-md-4 col-sm-6' style='display: none;'><a href='images/family/" +image+ "' title='" + caption + "' class='d-block mb-4 h-100'></a></div>";
 			}
-			//<a href="images/zhaopian/8.jpg" title="Photo Caption #1" alt="Photo Caption #1"><img src="images/zhaopian/8.jpg" border="0" class="thumb"></a> <img class='img-fluid img-thumbnail' src='images/family/"+image + "'>  
+			//<a href="images/zhaopian/8.jpg" title="Photo Caption #1" alt="Photo Caption #1"><img src="images/zhaopian/8.jpg" border="0" class="thumb"></a> <img class='img-fluid img-thumbnail' src='images/family/"+image + "'>
 		    }
        		    familyHtml= familyHtml + "</div>";
 		    $('.family').html(familyHtml);
@@ -250,7 +269,7 @@
 			}else{
 				lifeHtml= lifeHtml + "<div class='col-lg-4 col-md-4 col-sm-6' style='display: none;'><a href='images/life/" +image+ "' title='" + caption + "' class='d-block mb-4 h-100'></div>";
 			}
-			//<a href="images/zhaopian/8.jpg" title="Photo Caption #1" alt="Photo Caption #1"><img src="images/zhaopian/8.jpg" border="0" class="thumb"></a>  <img class='img-fluid img-thumbnail' src='images/life/"+image + "'></a>   
+			//<a href="images/zhaopian/8.jpg" title="Photo Caption #1" alt="Photo Caption #1"><img src="images/zhaopian/8.jpg" border="0" class="thumb"></a>  <img class='img-fluid img-thumbnail' src='images/life/"+image + "'></a>
 		    }
 		    $('.life').html(lifeHtml);
 
@@ -263,7 +282,7 @@
 			}else{
 				wedHtml= wedHtml + "<div class='col-lg-4 col-md-4 col-sm-6' style='display: none;'><a href='images/wedding/" +image+ "' title='" + caption + "' class='d-block mb-4 h-100'></a></div>";
 			}
-			//<a href="images/zhaopian/8.jpg" title="Photo Caption #1" alt="Photo Caption #1"><img src="images/zhaopian/8.jpg" border="0" class="thumb"></a> <img class='img-fluid img-thumbnail' src='images/wedding/"+image + "'> 
+			//<a href="images/zhaopian/8.jpg" title="Photo Caption #1" alt="Photo Caption #1"><img src="images/zhaopian/8.jpg" border="0" class="thumb"></a> <img class='img-fluid img-thumbnail' src='images/wedding/"+image + "'>
 		    }
 		    $('.wedding').html(wedHtml);
 
